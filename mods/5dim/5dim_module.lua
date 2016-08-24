@@ -1,14 +1,14 @@
 
 log("5dim_module")
 
-go.subgroups("module", {
+regroup.group.subgroups("module", {
 	"pollution",
 	"combined-4",
 	"combined-5",
 	"welder"
 })
 
-go.modules({
+regroup.group.modules({
 	["module"] = {
 		["effectivity"] = {
 			"5d-effectivity-module-4",
@@ -48,7 +48,7 @@ go.modules({
 	}
 })
 
-go.items({
+regroup.group.items({
 	["module"] = {
 		["welder"] = {
 			"5d-welder"

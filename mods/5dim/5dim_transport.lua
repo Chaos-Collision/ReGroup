@@ -1,21 +1,21 @@
 
 log("5dim_transport")
 
-go.insert_subgroups("transport", {
+regroup.group.insert_subgroups("transport", {
 	"ground30",
 	"ground50"
 }, "belt")
 
-go.subgroups("transport", {
+regroup.group.subgroups("transport", {
 	"pipe-to-ground30",
 	"pipe-to-ground50",
 })
 
-go.subgroups("machine",{
+regroup.group.subgroups("machine",{
 	"storage"
 })
 
-go.items({
+regroup.group.items({
 	["transport"] = {
 		["belt"] = {
 			"5d-mk4-transport-belt",

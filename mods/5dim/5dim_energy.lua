@@ -1,7 +1,7 @@
 
 log("5dim_energy")
 
-go.items({
+regroup.group.items({
 	["energy"] = {
 		["boiler"] = {
 			"5d-boiler",
@@ -11,13 +11,13 @@ go.items({
 			"5d-steam-engine-2",
 			"5d-steam-engine-3"
 		},
-		["offshore"] = { 
+		["offshore"] = {
 			"5d-offshore-pump",
-			"5d-offshore-pump-2" 
+			"5d-offshore-pump-2"
 		},
-		["pump"] = { 
+		["pump"] = {
 			"5d-small-pump",
-			"5d-small-pump-2" 
+			"5d-small-pump-2"
 		},
 		["solar"] = {
 			"5d-solar-panel-2",

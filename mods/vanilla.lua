@@ -1,7 +1,7 @@
 
 log("vanilla")
 
-go.subgroups("transport", {
+regroup.group.subgroups("transport", {
 	"belt",
 	"ground",
 	"splitter",
@@ -9,13 +9,13 @@ go.subgroups("transport", {
 	"pipe-to-ground"
 })
 
-go.subgroups("floor", {
+regroup.group.subgroups("floor", {
 	"basic",
 	"concrete",
 	"other"
 })
 
-go.subgroups("drone", {
+regroup.group.subgroups("drone", {
 	"logistic-robot",
 	"construction-robot",
 	"chest",
@@ -23,7 +23,7 @@ go.subgroups("drone", {
 	"blueprint"
 })
 
-go.subgroups("vehicle", {
+regroup.group.subgroups("vehicle", {
 	"car",
 	"tank",
 	"train",
@@ -31,7 +31,7 @@ go.subgroups("vehicle", {
 	"signal"
 })
 
-go.subgroups("energy", {
+regroup.group.subgroups("energy", {
 	"offshore",
 	"boiler",
 	"steam-engine",
@@ -42,7 +42,7 @@ go.subgroups("energy", {
 	"lamp"
 })
 
-go.subgroups("defense", {
+regroup.group.subgroups("defense", {
 	"turret",
 	"flame-turret",
 	"laser",
@@ -52,7 +52,7 @@ go.subgroups("defense", {
 	"radar"
 })
 
-go.subgroups("armor", {
+regroup.group.subgroups("armor", {
 	"tool",
 	"armor",
 	"energy",
@@ -62,7 +62,7 @@ go.subgroups("armor", {
 	"combat"
 })
 
-go.subgroups("gun", {
+regroup.group.subgroups("gun", {
 	"rifle",
 	"shotgun",
 	"rocket",
@@ -71,7 +71,7 @@ go.subgroups("gun", {
 	"tank"
 })
 
-go.subgroups("module", {
+regroup.group.subgroups("module", {
 	"lab",
 	"beacon",
 	"speed",
@@ -79,7 +79,7 @@ go.subgroups("module", {
 	"productivity"
 })
 
-go.items({
+regroup.group.items({
 	["transport"] = {
 		["belt"] = {
 			"transport-belt",
@@ -141,8 +141,8 @@ go.items({
 		["rail"] = {
 			{["name"] = "rail", ["typeof"] = "rail-planner"}
 		},
-		["signal"] = { 
-			"train-stop", 
+		["signal"] = {
+			"train-stop",
 			"rail-signal",
 			"rail-chain-signal"
 		}
@@ -192,7 +192,7 @@ go.items({
 			{["name"]="discharge-defense-remote",["typeof"]="capsule"},
 			"discharge-defense-equipment",
 			"personal-roboport-equipment",
-			"night-vision-equipment"	
+			"night-vision-equipment"
 		},
 
 	},
@@ -202,7 +202,7 @@ go.items({
 	}
 })
 
-go.modules({
+regroup.group.modules({
 	["module"] = {
 		["effectivity"] = {
 			"effectivity-module",
@@ -222,7 +222,7 @@ go.modules({
 	}
 })
 
-go.guns({
+regroup.group.guns({
 	["gun"] = {
 		["rifle"] = {
 			"pistol",
@@ -241,7 +241,7 @@ go.guns({
 	}
 })
 
-go.ammos({
+regroup.group.ammos({
 	["gun"] = {
 		["rifle"] = {
 			"firearm-magazine",
@@ -265,7 +265,7 @@ go.ammos({
 	}
 })
 
-go.capsules({
+regroup.group.capsules({
 	["gun"] = {
 		["throw"] = {
 			"grenade",
@@ -279,7 +279,7 @@ go.capsules({
 	}
 })
 
-go.tools({
+regroup.group.tools({
 	["armor"] = {
 		["tool"] = {
 			"iron-axe",
@@ -289,7 +289,7 @@ go.tools({
 	}
 })
 
-go.armors({
+regroup.group.armors({
 	["armor"] = {
 		["armor"] = {
 			"light-armor",
@@ -301,11 +301,11 @@ go.armors({
 	}
 })
 
-go.raw_subgroups("production", {
+regroup.group.raw_subgroups("production", {
 	{["name"] = "rocket-silo", ["order"] = "g"}
 })
 
-go.raw_items({
+regroup.group.raw_items({
 	["production"] = {
 		["rocket-silo"] = {
 			{["name"] = "rocket-silo", ["order"] = 0}

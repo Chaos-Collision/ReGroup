@@ -1,11 +1,11 @@
 
 log("5dim_decoration")
 
-go.insert_subgroups("floor",{
+regroup.group.insert_subgroups("floor",{
 	"colored"
 },"concrete")
 
-go.items({
+regroup.group.items({
 	["floor"] = {
 		["colored"] = {
 			"5d-concrete-a",

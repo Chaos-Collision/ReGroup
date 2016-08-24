@@ -1,7 +1,7 @@
 
 log("5dim_core")
 
-go.subgroups("machine", {
+regroup.group.subgroups("machine", {
 	"storage",
 	"drill",
 	"speed-drill",
@@ -13,7 +13,7 @@ go.subgroups("machine", {
 	"assembler"
 })
 
-go.subgroups("resource", {
+regroup.group.subgroups("resource", {
 	"dust",
 	"dust-plate",
 	"ore-plate",
@@ -22,7 +22,7 @@ go.subgroups("resource", {
 	"petro"
 })
 
-go.items({
+regroup.group.items({
 	["machine"] = {
 		["storage"] = {
 			"wooden-chest",
@@ -69,7 +69,7 @@ go.items({
 	}
 })
 
-go.raw_items({
+regroup.group.raw_items({
 	["intermediate"] = {
 		["intermediate-silo"] = {
 			{["name"] = "rocket-silo", ["order"] = "h"}

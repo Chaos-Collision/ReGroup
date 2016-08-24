@@ -1,7 +1,7 @@
 
 log("5dim_battlefield")
 
-go.items({
+regroup.group.items({
 	["vehicle"] = {
 		["tank"] = {
 			"5d-tank",

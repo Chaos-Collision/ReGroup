@@ -1,11 +1,11 @@
 
 log("boblogistics")
 
-go.subgroups("transport", {
+regroup.group.subgroups("transport", {
 	"storage-tank"
 })
 
-go.insert_subgroups("drone", {
+regroup.group.insert_subgroups("drone", {
 	"chest-2",
 	"robo-chest",
 	"expander",
@@ -13,13 +13,13 @@ go.insert_subgroups("drone", {
 	"charge-big"
 }, "chest")
 
-go.insert_subgroups("vehicle", {
+regroup.group.insert_subgroups("vehicle", {
 	"cargo"
 }, "train")
 
-go.reset_index("vehicle", "train", 0)
+regroup.group.reset_index("vehicle", "train", 0)
 
-go.items({
+regroup.group.items({
 	["transport"] = {
 		["belt"] = {
 			"green-transport-belt",
@@ -67,7 +67,7 @@ go.items({
 		["logistic-robot"] = {
 			"bob-logistic-robot-2",
 			"bob-logistic-robot-3",
-			"bob-logistic-robot-4" 
+			"bob-logistic-robot-4"
 		},
 		["construction-robot"] = {
 			"bob-construction-robot-2",
@@ -86,7 +86,7 @@ go.items({
 			"bob-robochest-3",
 			"bob-robochest-4",
 		},
-		["roboport"] = { 
+		["roboport"] = {
 			"bob-roboport-2",
 			"bob-roboport-3",
 			"bob-roboport-4"

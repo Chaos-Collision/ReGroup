@@ -1,28 +1,28 @@
 
 log("bobpower")
 
-go.insert_subgroups("energy", {
+regroup.group.insert_subgroups("energy", {
 	"air-pump",
 	"water-pump",
 	"small-solar"
 }, "pump")
 
-go.insert_subgroups("energy", {"large-solar"}, "solar")
+regroup.group.insert_subgroups("energy", {"large-solar"}, "solar")
 
-go.insert_subgroups("energy", {
+regroup.group.insert_subgroups("energy", {
 	"fast-accumulator",
 	"capacity-accumulator"
 }, "accumulator")
 
-go.insert_subgroups("energy", {
+regroup.group.insert_subgroups("energy", {
 	"medium-pole",
 	"big-pole",
 	"station"
 }, "poles")
 
-go.reset_index("energy", "poles", 1)
+regroup.group.reset_index("energy", "poles", 1)
 
-go.items({
+regroup.group.items({
 	["energy"] = {
 		["boiler"] = {
 			"boiler-2",
@@ -58,7 +58,7 @@ go.items({
 		},
 		["solar"] = {
 			"solar-panel-2",
-			"solar-panel-3"						
+			"solar-panel-3"
 		},
 		["large-solar"] = {
 			"solar-panel-large",
@@ -67,7 +67,7 @@ go.items({
 		},
 		["accumulator"] = {
 			"slow-accumulator",
-			"slow-accumulator-2",			
+			"slow-accumulator-2",
 			"slow-accumulator-3"
 		},
 		["fast-accumulator"] = {

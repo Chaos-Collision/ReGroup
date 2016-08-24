@@ -1,7 +1,7 @@
 
 log("5dim_ores")
 
-go.items({
+regroup.group.items({
 	["machine"] = {
 		["storage"] = {
 			"5d-iron-chest-mk3"
@@ -24,7 +24,7 @@ go.items({
 			"5d-furnace"
 		},
 		["furnace-electric"] = {
-			"5d-electric-furnace"	
+			"5d-electric-furnace"
 		},
 		["assembler"] = {
 			"5d-assembling-machine-4",
@@ -49,7 +49,7 @@ go.items({
 	}
 })
 
-go.recipes({
+regroup.group.recipes({
 	["resource"] = {
 		["dust-plate"] = {
 			"5d-iron-plate",

@@ -1,5 +1,7 @@
 
-go.items({
+log("more_floors")
+
+regroup.group.items({
 	["floor"] = {
 		["basic"] = {
 			"green_grass",

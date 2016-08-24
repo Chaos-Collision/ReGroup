@@ -2,7 +2,7 @@
 log("5dim_vehicle")
 
 
-go.items({
+regroup.group.items({
 ["vehicle"] = {
 		["car"] = {
 			"5d-truck",

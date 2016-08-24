@@ -1,11 +1,11 @@
 
 log("5dim_logistic")
 
-go.insert_subgroups("drone", {
+regroup.group.insert_subgroups("drone", {
 	"chest-2"
 }, "chest")
 
-go.items({
+regroup.group.items({
 	["drone"] = {
 		["logistic-robot"] = {
 			"5d-logistic-robot-2"

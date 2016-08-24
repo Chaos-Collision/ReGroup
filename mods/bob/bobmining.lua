@@ -1,9 +1,9 @@
 
 log("bobmining")
 
-go.reset_index("armor", "tool", 2)
+regroup.group.reset_index("armor", "tool", 2)
 
-go.tools({
+regroup.group.tools({
 	["armor"] = {
 		["tool"] = {
 			"brass-axe",
@@ -16,7 +16,7 @@ go.tools({
 	}
 })
 
-go.subgroups("machine", {
+regroup.group.subgroups("machine", {
 	"basic",
 	"drill",
 	"range-drill",
@@ -33,13 +33,13 @@ go.subgroups("machine", {
 	"rocket"
 })
 
-go.items({
+regroup.group.items({
 	["machine"] = {
 		["basic"] = {
 			"burner-mining-drill",
 			"electric-mining-drill"
 		},
-		["drill"] = {	
+		["drill"] = {
 			"bob-mining-drill-1",
 			"bob-mining-drill-2",
 			"bob-mining-drill-3",
@@ -55,7 +55,7 @@ go.items({
 			"stone-furnace",
 			"chemical-boiler",
 			"mixing-furnace",
-			"steel-furnace"	
+			"steel-furnace"
 		},
 		["e-furnace"] = {
 			"electric-furnace",

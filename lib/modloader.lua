@@ -1,27 +1,33 @@
 
-function go.loadmod(mod)
+regroup = regroup or {}
+
+local modloader = {}
+
+function modloader.loadmod(mod)
 	log("loading: %s", mod)
 
 	local _log = log
 
-	log = go.makelog(mod)
+	log = regroup.logging.makelog(mod)
 	require("mods/" .. mod)
 	--restore log
 	log = _log
 end
 
-function go.loadmods(modlist, orderlist)
+function modloader.loadmods(modlist, orderlist)
 	for i=1,#orderlist,1 do
 		local mod = modlist[orderlist[i]]
 		if mod == nil then
 			--do nothing
 		elseif type(mod) == "table" then
 			for _, submod in pairs(mod) do
-				go.loadmod(orderlist[i] .. '/' .. submod)
+				modloader.loadmod(orderlist[i] .. '/' .. submod)
 			end
 		else
-			go.loadmod(mod)
+			modloader.loadmod(mod)
 		end
 
 	end
 end
+
+regroup.modloader = modloader

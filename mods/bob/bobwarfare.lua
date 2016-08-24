@@ -1,42 +1,42 @@
 
 log("bobwarfare")
 
-go.insert_subgroups("defense", {"s-turret"}, "turret")
+regroup.group.insert_subgroups("defense", {"s-turret"}, "turret")
 
-go.insert_subgroups("gun", {
+regroup.group.insert_subgroups("gun", {
 	"rifle-ammo",
 }, "rifle")
 
-go.insert_subgroups("gun", {
+regroup.group.insert_subgroups("gun", {
 	"shotgun-ammo",
 	"laser-rifle",
 	"laser-ammo"
 }, "shotgun")
 
-go.insert_subgroups("gun", {
+regroup.group.insert_subgroups("gun", {
 	"rocket-ammo",
 }, "rocket")
 
-go.subgroups("gun", {
+regroup.group.subgroups("gun", {
 	"artillery",
 	"robot"
 })
 
-go.insert_subgroups("armor", {"solar"}, "energy")
+regroup.group.insert_subgroups("armor", {"solar"}, "energy")
 
-go.subgroups("armor", {
+regroup.group.subgroups("armor", {
 	"laser",
 	"nightvision"
 })
 
-go.reset_index("armor", "energy", 0)
-go.reset_index("armor", "combat", 2)
-go.reset_index("gun", "rifle", 2)
-go.reset_index("gun", "shotgun", 2)
-go.reset_index("gun", "rocket", 1)
+regroup.group.reset_index("armor", "energy", 0)
+regroup.group.reset_index("armor", "combat", 2)
+regroup.group.reset_index("gun", "rifle", 2)
+regroup.group.reset_index("gun", "shotgun", 2)
+regroup.group.reset_index("gun", "rocket", 1)
 
 
-go.items({
+regroup.group.items({
 	["armor"] = {
 		["energy"] = {
 			"fusion-reactor-equipment",
@@ -87,7 +87,7 @@ go.items({
 		}
 	}
 })
-go.armors({
+regroup.group.armors({
 	["armor"] = {
 		["armor"] = {
 			"bob-power-armor-mk3",
@@ -98,14 +98,14 @@ go.armors({
 		}
 	}
 })
-go.capsules({
+regroup.group.capsules({
 	["gun"] = {
 		["throw"] = {
 			"bob-laser-robot-capsule"
 		}
 	}
 })
-go.items({
+regroup.group.items({
 	["defense"] = {
 		["turret"] = {
 			"bob-gun-turret-2",
@@ -130,7 +130,7 @@ go.items({
 			"slowdown-mine"
 		},
 		["wall"] = {
-			"reinforced-wall"	
+			"reinforced-wall"
 		},
 		["gate"] = {
 			"reinforced-gate"
@@ -144,7 +144,7 @@ go.items({
 	}
 })
 
-go.guns({
+regroup.group.guns({
 	["gun"] = {
 		["rifle"] = {
 			"rifle",
@@ -155,7 +155,7 @@ go.guns({
 		}
 	}
 })
-go.ammos({
+regroup.group.ammos({
 	["gun"] = {
 		["rifle-ammo"] = {
 			"firearm-magazine",
@@ -209,7 +209,7 @@ go.ammos({
 		}
 	}
 })
-go.recipes({
+regroup.group.recipes({
 	["gun"] = {
 		["rifle-ammo"] = {
 			"bullet-magazine",

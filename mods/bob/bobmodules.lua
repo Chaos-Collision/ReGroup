@@ -1,7 +1,7 @@
 
 log("bobmodules")
 
-go.subgroups("module", {
+regroup.group.subgroups("module", {
 	"pollution-create",
 	"pollution-clean",
 	"raw-speed",
@@ -15,7 +15,7 @@ go.subgroups("module", {
 	"case2"
 })
 
-go.items({
+regroup.group.items({
 	["module"] = {
 		["beacon"] = {
 			"beacon-2",
@@ -24,7 +24,7 @@ go.items({
 	}
 })
 
-go.recipes({
+regroup.group.recipes({
 	["module"] = {
 		["raw-speed-combine"] = {
 			"raw-speed-module-1-combine",
@@ -75,7 +75,7 @@ go.recipes({
 			"productivity-processor-2",
 			"productivity-processor-3",
 		},
-		["case2"] = {	
+		["case2"] = {
 			"pollution-clean-processor",
 			"pollution-clean-processor-2",
 			"pollution-clean-processor-3",
@@ -86,14 +86,14 @@ go.recipes({
 	}
 })
 
-go.modules({
+regroup.group.modules({
 	["module"] = {
 		["speed"] = {
 			"speed-module-4",
 			"speed-module-5",
 			"speed-module-6",
 			"speed-module-7",
-			"speed-module-8"	
+			"speed-module-8"
 		},
 		["effectivity"] = {
 			"effectivity-module-4",

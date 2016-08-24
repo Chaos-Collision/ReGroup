@@ -1,9 +1,11 @@
 
-config = {}
+regroup = regroup or {}
 
-config.DEBUG_MODE = false
+regroup.config = {}
 
-config.active_mods = {
+regroup.config.DEBUG_MODE = false
+
+regroup.config.active_mods = {
 	["vanilla"] = "vanilla",
 	["5dim"] = {
 		"5dim_core", "5dim_transport",
@@ -26,7 +28,7 @@ config.active_mods = {
 	["more_floors"] = "more_floors",
 }
 
-config.mod_order = {
+regroup.config.mod_order = {
 	"vanilla",
 	"5dim",
 	"bob",
@@ -35,7 +37,7 @@ config.mod_order = {
 
 --internal settings beware of bear traps!
 
-config.group_list = {
+regroup.config.group_list = {
 	"transport",
 	"energy",
 	"machine",
@@ -50,7 +52,7 @@ config.group_list = {
 	"alien"
 }
 
-config.item_types = {
+regroup.config.item_types = {
 	"rail-planner",
 	"mining-tool",
 	"repair-tool",

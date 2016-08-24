@@ -3,7 +3,8 @@ require 'stdlib/table'
 require 'stdlib/string'
 require 'stdlib/data/data'
 
-go = {}
+regroup = regroup or {}
+
 require 'lib/modloader'
 require 'lib/table'
 require 'lib/logging'
@@ -11,10 +12,8 @@ require 'lib/groups'
 
 require 'config'
 
-go._log = log
+log = regroup.logging.makelog("data")
 
-log = go.makelog("data")
-
-table.iterate(config.group_list, function(group) 
-	go.makegroup(group)
+table.iterate(regroup.config.group_list, function(group)
+	regroup.group.makegroup(group)
 end)
