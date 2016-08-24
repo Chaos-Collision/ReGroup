@@ -1,0 +1,13 @@
+{
+	"name": "ReGroup",
+	"version": "1.0.0",
+	"title": "ReGroup",
+	"factorio_version": "0.13.17",
+	"author": "[CC]Xemrox, [CC]000Nice000",
+	"contact": "Discussion page on mods.factorio.com",
+	"homepage": "https://mods.factorio.com/mods/Xemrox/ReGroup",
+	"description": "Regroup vanilla, 5dim and bob mods",
+	"dependencies": [ "base >= 0.13.0", 
+		"? 5dim_core >= 0.13.0", 
+		"? boblibrary >= 0.13.0"]
+}
