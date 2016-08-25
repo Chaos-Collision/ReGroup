@@ -5,7 +5,7 @@ regroup.group.insert_subgroups("floor",{
 	"colored"
 },"concrete")
 
-regroup.group.items({
+regroup.group.insert({
 	["floor"] = {
 		["colored"] = {
 			"5d-concrete-a",

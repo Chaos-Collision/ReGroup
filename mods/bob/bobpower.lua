@@ -22,7 +22,7 @@ regroup.group.insert_subgroups("energy", {
 
 regroup.group.reset_index("energy", "poles", 1)
 
-regroup.group.items({
+regroup.group.insert({
 	["energy"] = {
 		["boiler"] = {
 			"boiler-2",

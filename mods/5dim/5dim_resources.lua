@@ -1,7 +1,7 @@
 
 log("5dim_resources")
 
-regroup.group.recipes({
+regroup.group.insert({
 	["resource"] = {
 		["dust"] = {
 			"5d-iron-dust",

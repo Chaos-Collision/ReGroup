@@ -5,7 +5,7 @@ regroup.group.insert_subgroups("drone", {
 	"chest-2"
 }, "chest")
 
-regroup.group.items({
+regroup.group.insert({
 	["drone"] = {
 		["logistic-robot"] = {
 			"5d-logistic-robot-2"

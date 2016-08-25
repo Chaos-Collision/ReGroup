@@ -36,7 +36,7 @@ regroup.group.reset_index("gun", "shotgun", 2)
 regroup.group.reset_index("gun", "rocket", 1)
 
 
-regroup.group.items({
+regroup.group.insert({
 	["armor"] = {
 		["energy"] = {
 			"fusion-reactor-equipment",
@@ -87,7 +87,7 @@ regroup.group.items({
 		}
 	}
 })
-regroup.group.armors({
+regroup.group.insert({
 	["armor"] = {
 		["armor"] = {
 			"bob-power-armor-mk3",
@@ -98,14 +98,14 @@ regroup.group.armors({
 		}
 	}
 })
-regroup.group.capsules({
+regroup.group.insert({
 	["gun"] = {
 		["throw"] = {
 			"bob-laser-robot-capsule"
 		}
 	}
 })
-regroup.group.items({
+regroup.group.insert({
 	["defense"] = {
 		["turret"] = {
 			"bob-gun-turret-2",
@@ -144,7 +144,7 @@ regroup.group.items({
 	}
 })
 
-regroup.group.guns({
+regroup.group.insert({
 	["gun"] = {
 		["rifle"] = {
 			"rifle",
@@ -155,7 +155,7 @@ regroup.group.guns({
 		}
 	}
 })
-regroup.group.ammos({
+regroup.group.insert({
 	["gun"] = {
 		["rifle-ammo"] = {
 			"firearm-magazine",
@@ -209,7 +209,7 @@ regroup.group.ammos({
 		}
 	}
 })
-regroup.group.recipes({
+regroup.group.insert({
 	["gun"] = {
 		["rifle-ammo"] = {
 			"bullet-magazine",

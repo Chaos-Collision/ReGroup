@@ -175,6 +175,83 @@ function groups.createSelector(typeof)
 	end
 end
 
+function groups.typeof(group, subgroup, item, checkRecipe)
+	if checkRecipe and data.raw["recipe"][item] ~= nil then
+		return "recipe"
+	end
+
+	local l = #regroup.config.item_types
+	for i = 1, l, 1 do
+		local typeof = regroup.config.item_types[i]
+		if data.raw[typeof][item] then
+			return typeof
+		end
+	end
+	log("no type for %s -> %s -> %s", group, subgroup, item)
+	return nil
+end
+
+function groups.moveData(group, subgroup, item, typeof)
+	local grpKey = group .. '-' .. subgroup
+	local order = grp.items[grpKey] or 0
+	local translatedOrder = groups.translateOrder(order)
+
+	local dataGrp = data.raw[typeof]
+	if dataGrp == nil then
+		log("invalid type %s -> %s -> %s [%s]", group, subgroup, item, typeof)
+		return
+	end
+
+	local dta = data.raw[typeof][item]
+	if dta then
+
+		log("moving %s -> %s -> %s [%s] {%s}", group, subgroup, item, tostring(order), typeof)
+
+		dta.subgroup = "rg-"..grpKey
+		dta.order = translatedOrder
+		dta.inventory_order = translatedOrder
+
+		grp.items[grpKey] = order + 1
+
+	else 
+		log("missing %s -> %s -> %s [%s] {%s}", group, subgroup, item, tostring(order), typeof)
+	end
+end
+
+function groups.insert(tbl)
+	table.each(tbl, function(subgroups, group)
+		if grp.groups[group] == nil then
+			log("missing group: %s", group)
+			return
+		end
+		table.each(subgroups, function(items, subgroup)
+			local grpKey = group .. '-' .. subgroup
+			if grp.subgroups[grpKey] == nil then
+				log("missing subgroup: %s in %s", subgroup, group)
+				return
+			end
+			table.iterate(items, function(item)
+				if type(item) == "table" then
+					groups.table_item(item, group, subgroup, typeof)
+				elseif type(item) == "string" then
+					--default action
+					local typeof = groups.typeof(group, subgroup, item, true)
+					groups.moveData(group, subgroup, item, typeof)
+					
+					if typeof == "recipe" then
+						--we got a recipe now sort the item
+						typeof = groups.typeof(group, subgroup, item, false)
+					
+						groups.moveData(group, subgroup, item, typeof)
+					end
+				else
+					log("wrong format: %s -> %s -> %s {%s}", group, subgroup, tostring(item), typeof)
+				end
+			end)
+		end)
+	end)
+end
+
 function groups.reset_index(group, subgroup, idx)
 	log("reset sub-group: %s in %s to %s", subgroup, group, tostring(idx))
 	grp.subgroups[group .. '-' .. subgroup] = idx

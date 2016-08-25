@@ -15,7 +15,7 @@ regroup.group.subgroups("machine",{
 	"storage"
 })
 
-regroup.group.items({
+regroup.group.insert({
 	["transport"] = {
 		["belt"] = {
 			"5d-mk4-transport-belt",

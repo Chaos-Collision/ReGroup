@@ -79,7 +79,7 @@ regroup.group.subgroups("module", {
 	"productivity"
 })
 
-regroup.group.items({
+regroup.group.insert({
 	["transport"] = {
 		["belt"] = {
 			"transport-belt",
@@ -202,7 +202,7 @@ regroup.group.items({
 	}
 })
 
-regroup.group.modules({
+regroup.group.insert({
 	["module"] = {
 		["effectivity"] = {
 			"effectivity-module",
@@ -222,7 +222,7 @@ regroup.group.modules({
 	}
 })
 
-regroup.group.guns({
+regroup.group.insert({
 	["gun"] = {
 		["rifle"] = {
 			"pistol",
@@ -241,7 +241,7 @@ regroup.group.guns({
 	}
 })
 
-regroup.group.ammos({
+regroup.group.insert({
 	["gun"] = {
 		["rifle"] = {
 			"firearm-magazine",
@@ -265,7 +265,7 @@ regroup.group.ammos({
 	}
 })
 
-regroup.group.capsules({
+regroup.group.insert({
 	["gun"] = {
 		["throw"] = {
 			"grenade",
@@ -279,7 +279,7 @@ regroup.group.capsules({
 	}
 })
 
-regroup.group.tools({
+regroup.group.insert({
 	["armor"] = {
 		["tool"] = {
 			"iron-axe",
@@ -289,7 +289,7 @@ regroup.group.tools({
 	}
 })
 
-regroup.group.armors({
+regroup.group.insert({
 	["armor"] = {
 		["armor"] = {
 			"light-armor",

@@ -22,7 +22,7 @@ regroup.group.subgroups("resource", {
 	"petro"
 })
 
-regroup.group.items({
+regroup.group.insert({
 	["machine"] = {
 		["storage"] = {
 			"wooden-chest",

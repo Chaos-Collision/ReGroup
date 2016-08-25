@@ -19,7 +19,7 @@ regroup.group.insert_subgroups("vehicle", {
 
 regroup.group.reset_index("vehicle", "train", 0)
 
-regroup.group.items({
+regroup.group.insert({
 	["transport"] = {
 		["belt"] = {
 			"green-transport-belt",

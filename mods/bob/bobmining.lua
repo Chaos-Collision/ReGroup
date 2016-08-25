@@ -3,7 +3,7 @@ log("bobmining")
 
 regroup.group.reset_index("armor", "tool", 2)
 
-regroup.group.tools({
+regroup.group.insert({
 	["armor"] = {
 		["tool"] = {
 			"brass-axe",
@@ -33,7 +33,7 @@ regroup.group.subgroups("machine", {
 	"rocket"
 })
 
-regroup.group.items({
+regroup.group.insert({
 	["machine"] = {
 		["basic"] = {
 			"burner-mining-drill",

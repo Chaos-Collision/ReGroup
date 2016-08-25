@@ -1,7 +1,7 @@
 
 log("5dim_battlefield")
 
-regroup.group.items({
+regroup.group.insert({
 	["vehicle"] = {
 		["tank"] = {
 			"5d-tank",

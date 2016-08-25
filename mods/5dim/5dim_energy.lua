@@ -1,7 +1,7 @@
 
 log("5dim_energy")
 
-regroup.group.items({
+regroup.group.insert({
 	["energy"] = {
 		["boiler"] = {
 			"5d-boiler",

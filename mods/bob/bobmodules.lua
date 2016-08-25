@@ -15,7 +15,7 @@ regroup.group.subgroups("module", {
 	"case2"
 })
 
-regroup.group.items({
+regroup.group.insert({
 	["module"] = {
 		["beacon"] = {
 			"beacon-2",
@@ -24,7 +24,7 @@ regroup.group.items({
 	}
 })
 
-regroup.group.recipes({
+regroup.group.insert({
 	["module"] = {
 		["raw-speed-combine"] = {
 			"raw-speed-module-1-combine",
@@ -86,7 +86,7 @@ regroup.group.recipes({
 	}
 })
 
-regroup.group.modules({
+regroup.group.insert({
 	["module"] = {
 		["speed"] = {
 			"speed-module-4",

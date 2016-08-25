@@ -8,7 +8,7 @@ regroup.group.subgroups("module", {
 	"welder"
 })
 
-regroup.group.modules({
+regroup.group.insert({
 	["module"] = {
 		["effectivity"] = {
 			"5d-effectivity-module-4",
@@ -48,7 +48,7 @@ regroup.group.modules({
 	}
 })
 
-regroup.group.items({
+regroup.group.insert({
 	["module"] = {
 		["welder"] = {
 			"5d-welder"

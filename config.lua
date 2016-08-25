@@ -3,7 +3,7 @@ regroup = regroup or {}
 
 regroup.config = {}
 
-regroup.config.DEBUG_MODE = false
+regroup.config.DEBUG_MODE = true
 
 regroup.config.active_mods = {
 	["vanilla"] = "vanilla",
@@ -53,20 +53,26 @@ regroup.config.group_list = {
 }
 
 regroup.config.item_types = {
+	"fluid",
+
+	"gun",
+	"ammo",
+	"armor",
+	"tool",
+	"module",
+	"capsule",
 	"rail-planner",
+
 	"mining-tool",
 	"repair-tool",
 	"blueprint-book",
 	"blueprint",
 	"deconstruction-item",
-	"gun",
-	"ammo",
-	"armor",
+
 	"virtual-signal",
-	"module",
-	"tool",
-	"capsule",
 	"selection-tool",
 	"market",
-	"combat-robot"
+	"combat-robot",
+
+	"item"
 }

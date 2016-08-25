@@ -1,7 +1,7 @@
 
 log("5dim_ores")
 
-regroup.group.items({
+regroup.group.insert({
 	["machine"] = {
 		["storage"] = {
 			"5d-iron-chest-mk3"
@@ -49,7 +49,7 @@ regroup.group.items({
 	}
 })
 
-regroup.group.recipes({
+regroup.group.insert({
 	["resource"] = {
 		["dust-plate"] = {
 			"5d-iron-plate",

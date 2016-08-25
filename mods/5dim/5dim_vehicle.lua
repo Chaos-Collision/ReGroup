@@ -2,7 +2,7 @@
 log("5dim_vehicle")
 
 
-regroup.group.items({
+regroup.group.insert({
 ["vehicle"] = {
 		["car"] = {
 			"5d-truck",

@@ -1,7 +1,7 @@
 
 log("more_floors")
 
-regroup.group.items({
+regroup.group.insert({
 	["floor"] = {
 		["basic"] = {
 			"green_grass",
